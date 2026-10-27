@@ -1,0 +1,16 @@
+# Node.js dependencies
+**/node_modules/
+
+# Local API credentials
+NewsPortal/api-key.js
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Build and editor output
+dist/
+coverage/
+.DS_Store
+.vscode/
