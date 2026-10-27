@@ -15,10 +15,11 @@ A Node.js chat application using Express and Socket.IO for real-time communicati
 A front-end news page with HTML, CSS, JavaScript, and a client-side news API integration.
 
 - **Entry point:** `NewsPortal/index.html`
-- **Assets:** `script.js`, `style.css`, and a news image
+- **Assets:** `script.js`, `style.css`, `api-key.example.js`, and a news image
+- **Local configuration:** copy `api-key.example.js` to `api-key.js` in the same folder and set your own NewsAPI key locally. The local `api-key.js` file is ignored by Git.
 - **Run:** open `NewsPortal/index.html` in a browser after configuring the API integration.
 
-**API-key warning:** Any key placed in browser JavaScript is visible to visitors. Do not commit private API keys. Use a server-side endpoint or provider-approved public/demo key, and rotate a key if it has already been exposed.
+**API-key warning:** Any key placed in browser JavaScript is visible to visitors. The previously tracked `NewsPortal/api-key.js` has been removed from the current branch and replaced with a safe example file. A real key may still exist in earlier Git commits, so revoke/rotate the exposed NewsAPI key in the provider dashboard and review the repository history. Prefer a server-side proxy over putting secret keys in browser code.
 
 ### 3. Text Editor
 A browser-based text editing interface.
